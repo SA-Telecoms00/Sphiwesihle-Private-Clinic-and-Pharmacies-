@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Sphiwesihle Private Clinics & Pharmacies</title>
+    <meta name="description" content="Book your appointment online at Sphiwesihle Private Clinics. Easy online booking for consultations, antenatal care, immunizations, and all healthcare services.">
+    <meta name="keywords" content="book appointment clinic, online healthcare booking, schedule doctor visit, clinic appointment South Africa, private clinic booking">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Book an Appointment | Sphiwesihle Private Clinics">
+    <meta property="og:description" content="Book your appointment online. Easy scheduling for all healthcare services.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_no_border_fixed_slogan.jpg" alt="Sphiwesihle Private Clinics & Pharmacies" style="height: 70px; width: auto;">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="https://wa.me/27719709788" target="_blank" class="btn btn-whatsapp btn-sm">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Booking Hero -->
+    <section class="booking-hero">
+        <div class="container">
+            <h1>Book an Appointment</h1>
+            <p>Schedule your visit with our experienced healthcare professionals. Online booking available 24/7 for your convenience.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-grid">
+                <!-- Booking Form -->
+                <div class="booking-form-container">
+                    <form class="booking-form" id="bookingForm">
+                        <h2><i class="fas fa-calendar-alt"></i> Online Booking</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="071 234 5678">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Select Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="primary">Primary Healthcare - General Consultation</option>
+                                <option value="family-planning">Family Planning</option>
+                                <option value="antenatal">Ante-natal Care</option>
+                                <option value="intranatal">Intra-natal Care</option>
+                                <option value="postpartum">Post-partum Care</option>
+                                <option value="immunizations">Immunizations</option>
+                                <option value="imci">IMCI Child Health</option>
+                                <option value="chronic">Chronic Disease Management</option>
+                                <option value="minor">Minor Ailments</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="other">Other Service</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time slot...</option>
+                                    <option value="08:00">08:00 AM</option>
+                                    <option value="08:30">08:30 AM</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="09:30">09:30 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="13:30">01:30 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="14:30">02:30 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="16:30">04:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="17:30">05:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Information (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your symptoms or any special requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <input type="checkbox" id="consent" name="consent" required style="width: auto; margin-top: 0.25rem;">
+                            <label for="consent" style="margin: 0; font-weight: 400; font-size: 0.9rem;">
+                                I consent to Sphiwesihle Clinic collecting and processing my personal information for the purpose of booking an appointment. *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg form-submit">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Booking
+                        </button>
+                        
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--text-gray);">
+                            <i class="fas fa-info-circle"></i>
+                            You will receive a confirmation via SMS and email
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-cards">
+                    <div class="contact-info-card animate-on-scroll">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:0719709788">071 970 9788</a>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;">Call us for immediate assistance</p>
+                    </div>
+                    
+                    <div class="contact-info-card animate-on-scroll">
+                        <div class="contact-info-icon" style="background: #25d366;">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/27719709788" target="_blank">071 970 9788</a>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;">Chat with us 24/7</p>
+                    </div>
+                    
+                    <div class="contact-info-card animate-on-scroll">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:info@sphiwesihleclinic.co.za">info@sphiwesihleclinic.co.za</a>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;">We reply within 24 hours</p>
+                    </div>
+                    
+                    <div class="contact-info-card animate-on-scroll">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Operating Hours</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span>Monday - Friday</span>
+                                <span>08:00 - 17:00</span>
+                            </li>
+                            <li>
+                                <span>Saturday & Public Holidays</span>
+                                <span>08:00 - 13:00</span>
+                            </li>
+                            <li>
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-info-card animate-on-scroll">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Clinic Address</h3>
+                        <p>123 Healthcare Avenue<br>Pretoria, Gauteng<br>South Africa</p>
+                        <a href="#map" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; color: var(--primary-blue); font-weight: 500;">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Our Clinic</h2>
+                <p>Visit us at our conveniently located facility. Ample parking available.</p>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229225.891199238!2d28.0!3d-25.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cb25e3d4d%3A0x6e5f5e9c7c7c7c7c!2sPretoria%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section" style="background: var(--bg-white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Us a Message</h2>
+                <p>Have a question? Fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <form class="booking-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="contactName" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number *</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" required placeholder="071 234 5678">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactService">Service Needed</label>
+                        <select id="contactService" name="contactService">
+                            <option value="">Select a service...</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="primary">Primary Healthcare</option>
+                            <option value="family-planning">Family Planning</option>
+                            <option value="antenatal">Ante-natal Care</option>
+                            <option value="immunizations">Immunizations</option>
+                            <option value="chronic">Chronic Disease Management</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about booking and our services.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I book an appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            You can book an appointment online through this page by filling out the booking form, call us at 071 970 9788, or send us a WhatsApp message. We recommend booking online for the fastest confirmation.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I bring to my appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Please bring your ID, medical aid card (if applicable), list of current medications, and any relevant medical records or previous test results. For antenatal visits, bring your maternity certificate if available.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I cancel or reschedule my appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, you can cancel or reschedule by calling us at least 24 hours in advance. This allows us to offer your slot to other patients who may need urgent care.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer same-day appointments?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, we do offer same-day appointments for urgent cases. Please call us directly at 071 970 9788 or send a WhatsApp message to check availability for same-day bookings.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is there parking available at the clinic?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, we have ample parking space available for our patients at no additional cost. The parking area is secure and easily accessible.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-banner-content">
+                <div class="cta-banner-text">
+                    <h2>Need Immediate Assistance?</h2>
+                    <p>Our team is ready to help you with any urgent healthcare needs.</p>
+                </div>
+                <div class="cta-banner-buttons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="tel:0719709788" class="btn btn-white btn-lg">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                    <a href="https://wa.me/27719709788" target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo_no_border_fixed_slogan.jpg" alt="Sphiwesihle Private Clinics & Pharmacies" style="height: 70px; width: auto;">
+                    </a>
+                    <p>Providing affordable, quality private healthcare services to communities across South Africa. Your health is our priority.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#family-planning">Family Planning</a></li>
+                        <li><a href="services.html#antenatal">Ante-natal Care</a></li>
+                        <li><a href="services.html#immunizations">Immunizations</a></li>
+                        <li><a href="services.html#chronic">Chronic Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:0719709788">071 970 9788</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/27719709788" target="_blank">WhatsApp Us</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@sphiwesihleclinic.co.za">info@sphiwesihleclinic.co.za</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        Mon-Fri: 08:00-17:00 | Sat/PH: 08:00-13:00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sphiwesihle Private Clinics & Pharmacies. All rights reserved.</p>
+                <p>Professional Healthcare You Can Trust</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/27719709788" target="_blank" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="floating-btn-tooltip">Chat on WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Chat Toggle -->
+    <button class="chat-toggle" aria-label="Open chat">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-header">
+            <h4><i class="fas fa-robot"></i> Clinic Assistant</h4>
+            <button class="chat-close" aria-label="Close chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message..." aria-label="Chat message">
+            <button aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Set minimum date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+            
+            // Pre-fill service from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            if (service && document.getElementById('service')) {
+                document.getElementById('service').value = service;
+            }
+        });
+    </script>
+</body>
+</html>
