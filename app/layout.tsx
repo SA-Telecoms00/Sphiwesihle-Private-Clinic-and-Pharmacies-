@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   description: clinic.about,
   applicationName: clinic.name,
   keywords: [
-    "private clinic Pretoria",
-    "pharmacy Pretoria",
+    "private clinic KwaMhlanga",
+    "pharmacy KwaMhlanga",
     "affordable healthcare",
     "family planning",
     "antenatal care",

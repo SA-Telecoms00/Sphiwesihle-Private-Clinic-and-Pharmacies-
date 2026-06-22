@@ -10,7 +10,7 @@ import { clinic } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact & Booking",
   description:
-    "Book an appointment or send an enquiry to Sphiwesihle Private Clinics & Pharmacies in Pretoria. Call, WhatsApp, or use our online booking form.",
+    "Book an appointment or send an enquiry to Sphiwesihle Private Clinics & Pharmacies in KwaMhlanga. Call, WhatsApp, or use our online booking form.",
   alternates: { canonical: "/contact" },
 };
 

@@ -8,7 +8,7 @@ import { services } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Primary healthcare, family planning, maternal and child health, immunizations, chronic disease management and more — affordable private care in Pretoria.",
+    "Primary healthcare, family planning, maternal and child health, immunizations, chronic disease management and more — affordable private care in KwaMhlanga.",
   alternates: { canonical: "/services" },
 };
 

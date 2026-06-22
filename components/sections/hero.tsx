@@ -31,7 +31,7 @@ export function Hero() {
         <div className="max-w-xl">
           <span className="inline-flex items-center gap-2 rounded-pill border border-brand-100 bg-bg/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-700 shadow-soft backdrop-blur">
             <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-            Trusted private healthcare · Pretoria
+            Trusted private healthcare · KwaMhlanga
           </span>
 
           <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.6rem]">
@@ -125,7 +125,7 @@ export function Hero() {
             {/* floating: open status (top-left) */}
             <div className="absolute -left-3 top-6 rounded-2xl border border-white/60 bg-bg/85 px-3 py-2.5 shadow-card backdrop-blur sm:-left-6">
               <OpenStatusPill className="bg-transparent !px-0 !py-0" />
-              <p className="mt-0.5 pl-[18px] text-[11px] text-muted">Mon–Fri 08:00–17:00</p>
+              <p className="mt-0.5 pl-[18px] text-[11px] text-muted">Mon–Sun 08:00–17:00</p>
             </div>
 
             {/* floating: inset consultation photo (bottom-right) */}

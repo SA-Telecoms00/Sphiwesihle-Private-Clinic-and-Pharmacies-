@@ -1,7 +1,7 @@
 # Sphiwesihle Private Clinics & Pharmacies
 
 A modern, fast, accessible marketing + booking website for a private
-primary-healthcare clinic and pharmacy in Pretoria, South Africa. Built with
+primary-healthcare clinic and pharmacy in KwaMhlanga, South Africa. Built with
 Next.js (App Router), TypeScript and Tailwind CSS.
 
 ## Tech stack
@@ -111,9 +111,10 @@ public/images/          Logo + clinic photos
 
 ## Notes / TODOs
 
-- **Address & map coordinates** in `lib/content/clinic.ts` are placeholders
-  (`123 Healthcare Avenue`, Pretoria CBD geo) — confirm with the client and
-  update `address` + `geo`.
+- **Map coordinates** in `lib/content/clinic.ts` (`geo`) are approximate for
+  KwaMhlanga; the address (Stand No. 1001 Sun City AA, KwaMhlanga 1022) is
+  confirmed. Refine `geo` with the exact clinic pin if precise map placement
+  matters (the contact-page map queries by address text, not `geo`).
 - **Logo:** the header/footer render the brand mark from
   `public/images/logo/logo-mark.jpg` (see `components/layout/logo.tsx`). Swap
   that file (ideally a transparent PNG) to update the logo site-wide.
