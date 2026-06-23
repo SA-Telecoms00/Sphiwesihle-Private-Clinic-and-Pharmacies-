@@ -73,6 +73,8 @@ export interface Clinic {
   /** Optional second contact number, displayed alongside the primary. */
   phone2Display?: string;
   phone2Href?: string;
+  /** Label for the second number (e.g. "Emergencies"). Defaults to "Call us". */
+  phone2Label?: string;
   whatsappNumber: string; // E.164 without +, for wa.me
   whatsappUrl: string;
   /** Primary inbox — also the backend send target (see lib/email.ts) + JSON-LD. */

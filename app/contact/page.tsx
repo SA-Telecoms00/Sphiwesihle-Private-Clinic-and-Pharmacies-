@@ -58,7 +58,7 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <span>
-                  <span className="block text-xs text-muted">Call us</span>
+                  <span className="block text-xs text-muted">{clinic.phone2Label ?? "Call us"}</span>
                   <span className="block text-sm font-semibold text-ink">{clinic.phone2Display}</span>
                 </span>
               </a>

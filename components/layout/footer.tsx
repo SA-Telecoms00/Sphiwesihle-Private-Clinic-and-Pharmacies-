@@ -137,7 +137,12 @@ export function Footer() {
                     <span className="grid h-9 w-9 place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10">
                       <Phone className="h-4 w-4 text-brand-300" aria-hidden="true" />
                     </span>
-                    {clinic.phone2Display}
+                    <span>
+                      {clinic.phone2Label && (
+                        <span className="block text-[11px] text-brand-100/60">{clinic.phone2Label}</span>
+                      )}
+                      {clinic.phone2Display}
+                    </span>
                   </a>
                 </li>
               )}

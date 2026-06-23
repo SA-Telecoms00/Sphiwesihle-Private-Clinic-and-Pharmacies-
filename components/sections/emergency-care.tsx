@@ -32,14 +32,14 @@ export function EmergencyCare() {
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Cta
-                  href={clinic.phoneHref}
+                  href={clinic.phone2Href ?? clinic.phoneHref}
                   event="call_click"
                   eventData={{ location: "emergency" }}
                   variant="danger"
                   size="lg"
                 >
                   <Phone className="h-5 w-5" aria-hidden="true" />
-                  Call {clinic.phoneDisplay}
+                  Call {clinic.phone2Display ?? clinic.phoneDisplay}
                 </Cta>
                 <Cta
                   href={clinic.whatsappUrl}

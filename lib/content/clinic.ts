@@ -10,12 +10,13 @@ export const clinic: Clinic = {
   tagline: "Affordable Private Healthcare You Can Trust",
   about:
     "Sphiwesihle Private Clinics & Pharmacies provides affordable, professional primary healthcare to the KwaMhlanga community — from everyday consultations and chronic care to maternal and child health, all delivered with warmth and respect.",
-  phoneDisplay: "071 970 9788",
-  phoneHref: "tel:0719709788",
+  phoneDisplay: "076 282 2465",
+  phoneHref: "tel:0762822465",
   phone2Display: "074 388 8452",
   phone2Href: "tel:0743888452",
-  whatsappNumber: "27719709788",
-  whatsappUrl: "https://wa.me/27719709788",
+  phone2Label: "Emergencies",
+  whatsappNumber: "27762822465",
+  whatsappUrl: "https://wa.me/27762822465",
   email: "info@sphiwesihleclinics.co.za",
   emails: ["info@sphiwesihleclinics.co.za", "admin@sphiwesihleclinics.co.za"],
   address: {
